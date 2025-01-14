@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "techseg"
+location: "europe-west2"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "techseqdatabase"
+      cloudSql:
+        instanceId: "techsegcloudsql"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
